@@ -1,0 +1,31 @@
+{
+  "name": "ebook-project",
+  "version": "1.0.0",
+  "private": true,
+  "config": {
+    "bookDir": "astanga-hridayam"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run epub",
+    "clean": "rimraf $npm_package_config_bookDir/dist && mkdirp $npm_package_config_bookDir/dist",
+    "lint:html": "htmlhint \"$npm_package_config_bookDir/src/**/*.html\"",
+    "lint:css": "stylelint \"$npm_package_config_bookDir/src/**/*.css\"",
+    "epub-pandoc": "./build-pandoc.sh $npm_package_config_bookDir",
+    "epub-callibre": "./build-callibre.sh $npm_package_config_bookDir",
+    "check": "npm run lint && npm run build",
+    "validate:epub": "JAVA_HOME=$(/usr/libexec/java_home) epubcheck $npm_package_config_bookDir/dist/$npm_package_config_bookDir.epub",
+    "lint": "npm run lint:html && npm run lint:css",
+    "format": "prettier --write \"$npm_package_config_bookDir/src/**/*.{html,css,md}\" \"$npm_package_config_bookDir/*.yaml\"",
+    "serve": "browser-sync start --server $npm_package_config_bookDir/src --files \"$npm_package_config_bookDir/src/**/*\""
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.0",
+    "htmlhint": "^1.1.4",
+    "jsdom": "^29.1.1",
+    "mkdirp": "^3.0.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}

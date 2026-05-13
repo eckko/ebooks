@@ -1,0 +1,27 @@
+body {
+  font-family: serif;
+  line-height: 1.6;
+  margin: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-indent: 1.2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0.5em 0;
+}
+
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
