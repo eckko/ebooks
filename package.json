@@ -19,6 +19,8 @@
     "serve": "browser-sync start --server $npm_package_config_bookDir/src --files \"$npm_package_config_bookDir/src/**/*\""
   },
   "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1",
     "browser-sync": "^3.0.0",
     "htmlhint": "^1.1.4",
     "jsdom": "^29.1.1",
