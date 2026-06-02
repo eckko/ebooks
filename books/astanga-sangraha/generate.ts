@@ -1,15 +1,15 @@
 import {readFileSync, writeFileSync} from 'node:fs';
 import { join } from 'node:path';
 
-const original = readFileSync(join(__dirname, 'txt', 'ch04.txt'), 'utf8').split(/\n\n\n\n\n/);
-const sandhi = readFileSync(join(__dirname, 'txt', 'ch04-sandhi.txt'), 'utf8').split(/\n\n\n\n\n/);
-const hindi = readFileSync(join(__dirname, 'txt', 'ch04-hindi.txt'), 'utf8').split(/\n\n\n\n\n/);
+const original = readFileSync(join(__dirname, 'txt', 'ch05.txt'), 'utf8').split(/\n\n\n\n\n/);
+const sandhi = readFileSync(join(__dirname, 'txt', 'ch05-sandhi.txt'), 'utf8').split(/\n\n\n\n\n/);
+const hindi = readFileSync(join(__dirname, 'txt', 'ch05-hindi.txt'), 'utf8').split(/\n\n\n\n\n/);
 
 const generate = () => {
     console.log(original.length, sandhi.length, hindi.length);
 
     let data = []
-    for (let i = 22; i < original.length; i++) {
+    for (let i = 4; i < original.length; i++) {
         data = []
         const sandhiArray = sandhi[i].split(/\n/);
         const hindiArray = hindi[i].split(/\n/);
@@ -20,7 +20,7 @@ const generate = () => {
             const line = `| 4.${i+1}._${j+1}_ | **${sandhiArray[j]}** | ${hindiArray[j]} |`;
             data.push(line)
         }
-        writeFileSync(join(__dirname, 'md', `ch04.${String(i+1).padStart(2, '0')}.md`), data.join('\n'));
+        writeFileSync(join(__dirname, 'md', `ch05.${String(i+1).padStart(2, '0')}.md`), data.join('\n'));
     }
 
 }
