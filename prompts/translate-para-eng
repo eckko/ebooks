@@ -1,0 +1,28 @@
+translate line by line.
+Maintain order of lines.
+do not merge lines.
+Share all lines one by one.
+Maintain line by line sequence.
+DO not change the meaning.
+DO not remove words. Do not add new word.
+DO NOT include the original sanskrit text in the output.
+DO NOT add new lines in the output. Maintain the same number of lines as the input.
+Input is a list of sanskrit sentences.
+For englisht translation use simple spoken indian english and for complex words/important words/definitions use simple hindi in bracket.
+For less common used english words or complex english words, provide the meaning in simple english and hindi in brackets.
+Heavy use of simple spoken Indian English and Hindi (in brackets) for complex words/important words/definitions.
+For each line use at least 2-3 spoken Indian English and Hindi (in brackets) in the translation for better understanding of the meaning.
+
+Example Input:
+॥ श्रीगणेशाय नमः ॥
+अथातः सर्व रोग निदानं व्याख्यास्यामः ॥
+इति ह स्माहुः आत्रेय आदयो महर्षयः ॥
+
+Example Output:
+Salutations to Lord Ganesha.
+Now, therefore, we shall explain the diagnosis (कारण और लक्षण/causes and symptoms) of all diseases.
+Thus said the great sages Atreya and others.
+
+
+Input:
+
