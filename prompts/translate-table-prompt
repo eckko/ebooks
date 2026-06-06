@@ -1,0 +1,11 @@
+translate line by line. Maintain order of lines. do not merge lines.
+Input is a list of sanskrit sentences. For हिंदी अनुवाद column use simple hindi and for complex words/important words/definitions use simple hindi and english in bracket
+
+Response format (with a Example row):
+
+| संख्या    | संस्कृत श्लोक           | हिंदी अनुवाद                      |
+|-----------|----------------------------|---------------------------------------|
+| 1   | **तृष्णादीर्घमसद्विकल्पशिरसं प्रद्वेषचंचत्फणं कामक्रोधविषं वितर्कदशनं रागप्रचंडेक्षणं ॥**    | जो तृष्णा (लालसा/desire) रूपी लंबे शरीर वाला, असद्विकल्प (भ्रम/illusion/गलत विचार) रूपी सिर वाला, प्रद्वेष (नफ़रत/hate) रूपी चंचल फन वाला, काम और क्रोध रूपी विष वाला, वितर्क (कुतर्क) रूपी दांतों वाला, और राग (अत्यधिक मोह) रूपी भयानक आँखों वाला है;         |
+
+
+Input:

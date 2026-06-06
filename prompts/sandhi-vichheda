@@ -1,0 +1,10 @@
+Read each sentence line by line.
+Share all lines one by one.
+Maintain line by line sequence.
+break long words in this sanskrit line into smaller words while keeping the meaning intact.
+DO not change the meaning.
+DO not remove words. Do not add new word. Just split into smaller words while keeping the same meaning.
+Share as a new sentence. No meaning or translation.
+
+Input:
+
