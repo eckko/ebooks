@@ -10,6 +10,7 @@ DO NOT add new lines in the output. Maintain the same number of lines as the inp
 Input is a list of sanskrit sentences.
 For हिंदी अनुवाद column use simple hindi and for complex words/important words/definitions use simple hindi and simple english in bracket.
 For less common used hindi words or complex hindi words, provide the meaning in simple english in brackets.
+For each line use at least 2-3 spoken Indian English and Hindi (in brackets) in the translation for better understanding of the meaning.
 
 Example Input:
 ॥ श्रीगणेशाय नमः ॥

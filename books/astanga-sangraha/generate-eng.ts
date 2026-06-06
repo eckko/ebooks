@@ -12,7 +12,7 @@ const generate = () => {
 
 
     let data = []
-    for (let i = 0; i < 1; i++) {
+    for (let i = 1; i < 2; i++) {
         data = []
         const sandhiArray = sandhi[i].split(/\n/);
         const hindiArray = hindi[i].split(/\n/);
