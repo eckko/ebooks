@@ -1,0 +1,41 @@
+read line by line.
+Maintain order of lines.
+do not merge lines.
+Create a logical grouping of lines based on the meaning and context of the sentences.
+DO not change the meaning.
+Do not remove words. Do not add new word.
+DO NOT include the original sanskrit text in the output.
+
+Assume the numbering of lines starts from 1 and continues sequentially with each new line.
+DO not assume any other line numbering. ONLY use the given order of lines as numbering.
+Ensure all lines are included in the output groups.
+
+Input is a list of sanskrit sentences.
+
+Use both hindi and english as main languages separate by <br/><br/>.
+For less common used words or complex words, provide the meaning in simple english and hindi in brackets.
+Heavy use of simple spoken Indian English and Hindi (in brackets) for complex words/important words/definitions.
+For each line use at least 2-3 spoken Indian English and Hindi (in brackets) in the translation for better understanding of the meaning.
+
+Each logical grouping should be represented as a row in the output with the following columns:
+1. Line Numbers (e.g., "1-4" for lines 1 to 4)
+2. Group Name in hindi (e.g., "मङ्गलाचरण")
+3. Group Name in english (e.g., "Salutations")
+Each column should be separated by a vertical bar "|") and a space on either side for better readability.
+
+Keep the number of groups to less than 10. Avoid creating too many small groups; instead, aim for broader themes.
+Do not include the original sanskrit text in the output. Only include the groupings as specified.
+Ensure each line and line number is included in the output groups without any omissions.
+
+Example Input:
+॥ श्रीगणेशाय नमः ॥
+अथातः सर्व रोग निदानं व्याख्यास्यामः ॥
+इति ह स्माहुः आत्रेय आदयो महर्षयः ॥
+
+Example Output:
+44-48      | दोषों का परिचय और उनके कार्य  |  Introduction and functions of Doshas
+49-50      | दोषों का स्थान और काल-प्रभाव  |  Locations and temporal influence of Doshas
+
+
+Input:
+
