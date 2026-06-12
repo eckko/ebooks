@@ -1,7 +1,7 @@
 import {readFileSync, writeFileSync} from 'node:fs';
 import { join } from 'node:path';
 
-const CHAPTER = '4'
+const CHAPTER = '1'
 const original = readFileSync(join(__dirname, 'txt', `ch0${CHAPTER}.txt`), 'utf8').split(/\n\n\n\n\n/);
 const sandhi = readFileSync(join(__dirname, 'txt', `ch0${CHAPTER}-sandhi.txt`), 'utf8').split(/\n\n\n\n\n/);
 const hindi = readFileSync(join(__dirname, 'txt', `ch0${CHAPTER}-hindi.txt`), 'utf8').split(/\n\n\n\n\n/);
@@ -12,7 +12,7 @@ const generate = () => {
 
 
     let data = []
-    for (let i = 0; i < 2; i++) {
+    for (let i = 4; i < 5; i++) {
         data = []
         const sandhiArray = sandhi[i].split(/\n/);
         const hindiArray = hindi[i].split(/\n/);
