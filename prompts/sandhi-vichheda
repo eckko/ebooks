@@ -12,6 +12,7 @@ DO not add any new line in response.
 EXTRACT each word from compound words.
 MOST IMPORTANT: DO Sandhi vicchheda (word splitting) for ALL words in the sentence.
 EACH and EVERY WORD should be split into smaller words while keeping the meaning intact.
+Maintain । and ॥ and other punctuations as in the original text.
 
 Input:
 
