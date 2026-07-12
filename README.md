@@ -8,4 +8,7 @@
 * [शिव तांडव स्तोत्र](./books/shiv-tandav-strotra/md/strotam.md)
 * [गीता](./books/gita/md/structure.md)
 
+Software Engineering
+* [Leetcode](./books/leetcode/md/structure.md)
+* [Agile](./books/agile/md/structure.md)
 
